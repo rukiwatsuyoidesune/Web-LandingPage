@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopUpin!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        * {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        body {
+            color: black;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 32px auto;
+            padding: 0px 32px;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+        }
+        
+        .logo img {
+            width: 70px;
+            height: 70px;
+            border-radius: 41px;
+            outline: 4px solid #005099;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 48px;
+            align-items: center;
+        }
+
+        .items {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .items a:link,
+        .items a:visited {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .items a:hover {
+            color: #005099;
+        }
+
+        .active {
+            color: #005099;
+        }
+
+        button {
+            font-size: 32px;
+            padding: 9.6px 16px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(to right, #0072dd, #005099);
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background: white;
+            outline: 1px solid #005099;
+            color: #005099;
+            border: none;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .short-info {
+            color: #005099;
+            font-size: 16px;
+            margin-bottom: 14.4px;
+        }
+
+        .hero-heading {
+            font-size: 48px;
+            margin-bottom: 4.8px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: bolder;
+            color: #005099;
+        }
+
+        .hero-sub-heading {
+            font-size: 15px;
+            opacity: 1;
+        }
+
+        .users {
+            display: flex;
+            align-items: center;
+            margin: 16px 0px;
+        }
+
+        .users > p {
+            margin-left: 10px;
+        }
+
+        .user {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #005099;
+        }
+
+        .learn-more {
+            align-self: start;
+            margin-top: 48px;
+        }
+
+        .other > button {
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+      <div class="logo">
+        <img src="assets/img/kazuha.webp">
+      </div>
+      <div class="items">
+        <a href="#" class="active">Home</a>
+        <a href="#">Store</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+      </div>
+  
+      <div class="other">
+        <button>Log in</button>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="info">
+            <h1>TopUpin!</h1>
+        <h2 class="hero-heading">Top Up Game Termurah!</h2>
+          <p class="short-info">Dijamin Aman dan Terpercaya, Garansi 10x Lipat, Pembayaran Mudah</p>
+          <p class="hero-sub-heading">Mobile Legends | Honkai: Star Rail | PUBG Mobile | EA Sports FC Mobile | Genshin Impact</p>
+          <div class="users">
+            <img src="assets/img/Kimmy JKT48.jpg" class="img-fluid user">
+            <img src="assets/img/lilyjkt48.jpg" class="img-fluid user">
+            <img src="assets/img/nala jkt48.jpg" class="img-fluid user">
+            <img src="assets/img/nachia.jpg" class="img-fluid user">
+            <p>4 juta+ pelanggan</p>
+          </div>
+          <button class="learn-more">Top Up Sekarang</button>
+        </div>
+        <div class="hero-image">
+          <img src="assets/img/heros.PNG" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
